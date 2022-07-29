@@ -1,0 +1,8 @@
+---
+- name: test
+  hosts: localhost
+  tasks:
+    - name: test collection
+      my_own_namespace.my_own_collection.create_file:
+        path: ./another_one.txt
+        content: "test"
